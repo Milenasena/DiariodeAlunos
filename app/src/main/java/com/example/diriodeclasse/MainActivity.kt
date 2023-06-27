@@ -54,6 +54,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun CartaoAluno(aluno:Aluno) {
+    var expandir by remeber
     Card(
         modifier = Modifier
             .fillMaxWidth()
