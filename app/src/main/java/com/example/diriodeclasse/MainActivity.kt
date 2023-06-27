@@ -95,11 +95,11 @@ fun CartaoAluno(aluno:Aluno) {
                 )
 
             }
-            Spacer(modifier = Modifier.width(70))
+            Spacer(modifier = Modifier.width(70.dp))
             //to string valor em inteiro
-            Text(text = aluno.faltas.toString()
+            Text(text = "Faltas: ${aluno.faltas}"
             )
-            Text(text = aluno.nota.toString()
+            Text(text = "Nota ${aluno.nota}"
             )
         }
     }
@@ -108,7 +108,12 @@ fun CartaoAluno(aluno:Aluno) {
 @Composable
 fun PreviwCardAluno(){
     CartaoAluno(
-        aluno = )
+        aluno = Aluno(
+        nome = "Milena",
+        curso = "Design"
+
+    )
+    )
 }
 
     
