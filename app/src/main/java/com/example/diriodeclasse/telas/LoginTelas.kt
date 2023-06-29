@@ -27,7 +27,7 @@ import androidx.navigation.NavHostController
 import com.example.diriodeclasse.R
 
 @OptIn(ExperimentalMaterial3Api::class)
-@Preview(showBackground = true)
+
 @Composable
 fun LoginTelas(controledenavegacao: NavHostController) {
     var login by remember { mutableStateOf("") }
@@ -70,3 +70,4 @@ fun LoginTelas(controledenavegacao: NavHostController) {
         }
     }
 }
+@Preview(showBackground = true)
