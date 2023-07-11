@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360677300211",
+    "project_id": "diario-de-classe-7cb76",
+    "storage_bucket": "diario-de-classe-7cb76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360677300211:android:7321bfbbaa9d6ea8fba486",
+        "android_client_info": {
+          "package_name": "com.example.diriodeclasse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360677300211-1kibansep3nhj63o3v6gsv1fusvm8kq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9QCLRpm2fJFS_TQBfamjljyYdCU8ZoGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360677300211-1kibansep3nhj63o3v6gsv1fusvm8kq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

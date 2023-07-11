@@ -24,15 +24,18 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.diriodeclasse.R
+import com.example.diriodeclasse.telas.telalogin.telaListaDeAlunos.TelaoriginVersionMode
 
 @OptIn(ExperimentalMaterial3Api::class)
 
 @Composable
-fun LoginTelas(controledenavegacao: NavHostController) {
-    var login by remember { mutableStateOf("") }
-    var senha by remember { mutableStateOf("") }
+fun LoginTelas(controledenavegacao: NavHostController,
+               telaoriginVersionMode:TelaoriginVersionMode= viewModel()
+){
+
     Card() {
 
 
@@ -57,14 +60,14 @@ fun LoginTelas(controledenavegacao: NavHostController) {
             )
             Spacer(modifier = Modifier.height(25.dp))
             OutlinedTextField(
-                value = login,
-                onValueChange = { login = it },
+                value = telaoriginVersionMode.login,
+                onValueChange = { telaoriginVersionMode.updatelogin(it)},
                 label = { Text(text = "Login") }
             )
             Spacer(modifier = Modifier.height(25.dp))
             OutlinedTextField(
-                value = senha,
-                onValueChange = { senha = it },
+                value = telaoriginVersionMode.senha,
+                onValueChange = { telaoriginVersionMode.updatesenha(it)},
                 label = { Text(text = "Senha") }
             )
             Spacer(modifier = Modifier.height(25.dp))
